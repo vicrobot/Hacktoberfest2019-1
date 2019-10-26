@@ -87,7 +87,7 @@ def foo(z):
     topmost = [(i,j) for i, j in z if j == max(Y)]
     v1 = sorted(topmost)[0]
     finallist.append(v1)
-    next_point = v1[0], v1[0]+1 # just a non v1 point choosed
+    next_point = v1[0], v1[1]+1 # just a non v1 point choosed
     pivot = v1
     while next_point!= v1:
         next_point = next_hurdle(z, pivot, finallist)
