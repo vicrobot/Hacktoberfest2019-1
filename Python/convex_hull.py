@@ -1,5 +1,5 @@
-X = [int(i.strip()) for i in input().rstrip().split(',')]
-Y = [int(i.strip()) for i in input().rstrip().split(',')]
+X = [int(i.strip()) for i in input().rstrip().split(',') if i]
+Y = [int(i.strip()) for i in input().rstrip().split(',') if i]
 
 Z = list(set((zip(X, Y))))
 X = [i for i, j in Z]
